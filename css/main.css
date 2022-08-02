@@ -1194,7 +1194,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ccff9a;
+  background: #ff0eff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1515,12 +1515,13 @@ pre .javascript .function {
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
-  left: 30px;
-  opacity: 1;
+  right: 30px;
+  opacity: 0.6;
   padding: 0 6px;
   position: fixed;
   transition-property: bottom;
   z-index: 1300;
+  border-radius: 10px;
   width: initial;
 }
 .back-to-top:hover {
@@ -1531,7 +1532,7 @@ pre .javascript .function {
 }
 @media (max-width: 991px) {
   .back-to-top {
-    left: 20px;
+    right: 20px;
     opacity: 0.8;
   }
 }
@@ -2209,11 +2210,11 @@ hr {
   }
 }
 .content {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 @media (max-width: 767px) {
   .content {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 }
 .pagination {
@@ -2343,7 +2344,7 @@ hr {
 @media (max-width: 767px) {
   .posts-expand.index .post-title,
   .posts-expand.index .post-meta {
-    text-align: center;
+    text-align: left;
   }
 }
 .posts-expand.index .post-meta {
