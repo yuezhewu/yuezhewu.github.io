@@ -1,8 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>第11章 导数和图像</title>
+    <url>/calculus/calculus11/</url>
+    <content><![CDATA[<h1 id="第11章-导数和图像"><a href="#第11章-导数和图像" class="headerlink" title="第11章 导数和图像"></a>第11章 导数和图像</h1><p>全局最大(小)值 或 绝对最大(小)值<br>局部最大(小)值 或 相对最大(小)值<br><strong>最大值与最小值定理</strong>：如果 $f$ 在 $[a,b]$ 上连续，那么 $f$ 在 $[a,b]$ 上至少有一个最大值和一个最小值<br><strong>极值定理</strong>：假设函数 $f$ 定义在开区间 $(a,b)$ 内，并且点 $c$ 在 $(a,b)$ 区间内，如果点 $c$ 为函数的局部最大值或最小值，那么点 $c$ 一定为该函数的临界点，也就是说，$f’(c)=0$ 或 $f’(c)$ 不存在，此定理适用于开区间<br>在一个开区间内的局部最大值和最小值只有可能出现在临界点，但临界点未必一定是局部最大值或局部最小值，例如 $f(x)=x^3$<br><strong>罗尔定理</strong>：假设函数 $f$ 在闭区间 $[a,b]$ 内连续，在开区间 $(a,b)$ 内可导，如果 $f(a)=f(b)$，那么在开区间 $(a,b)$ 内至少存在一点 $c$，使得 $f’(c)=0$<br>罗尔定理应用的例子：假设有一个函数 $f$ 满足 $f’(x)&gt;0$，则该函数一定满足水平线检验</p>
+<ul>
+<li>证明：首先假设 $f$ 不满足水平线检验，那么一定有一条水平线 $y=L$，它与图像相交两次或者更多，假设这些交点中的两点横坐标为 $a$ 和 $b$，则有 $f(a)=f(b)=L$，由于 $f(a)=f(b)$，所以可以使用罗尔定理，由定理可得在 $a$ 和 $b$ 之间一定存在一点 $c$ 使得 $f’(c)=0$，这与条件相悖，故证明该函数满足水平线检验</li>
+</ul>
+<p><strong>中值定理</strong>：假设函数 $f$ 在闭区间 $[a,b]$ 内连续，在开区间 $(a,b)$ 内可导，那么在开区间 $(a,b)$ 内至少有一点 $c$ 使得 $f’(c)=\frac{f(b)-f(a)}{b-a}$<br>中值定理应用的例子：假设有一个函数，对于所有的实数 $x$ 处处可导并且 $f’(x)&gt;4$，证明这个函数 $y=f(x)$ 的图像与线性函数 $y=3x-2$ 最多只有一个交点</p>
+<ul>
+<li>证明：如果点 $(x,y)$ 是同时满足函数 $y=f(x)$ 和线性函数 $y=3x-2$ 的点，一定会有 $f(x)=3x-2$，运用反证法，假设交点不止一个，任选其中两个，并分配记号 $a$ 和 $b$，使得 $a&lt;b$，由于他们是交点，有 $f(a)=3a-2$ 和 $f(b)=3b-2$，又由于该函数对于所有实数都处处可导且连续，根据中值定理，在开区间 $(a,b)$ 内一定有一点 $c$ 使得 $f’(c)=\frac{f(b)-f(a)}{b-a}$ 代入 $f(a)=3a-2$ 和 $f(b)=3b-2$，可得 $f’(c)=\frac{f(3b-2)-f(3a-2)}{b-a}=\frac{3(b-a)}{b-a}=3$ 与条件中 对于所有 $x$，$f’(x)&gt;4$ 相悖，因此最多只能有一个交点</li>
+</ul>
+<p>中值定理的推论</p>
+<ul>
+<li>如果对于在定义域 $(a,b)$ 内的所有 $x$，都有 $f’(x)=0$，那么函数 $f$ 在开区间 $(a,b)$ 内为常数函数</li>
+<li>如果对于任意实数 $x$ 都有 $f’(x)=g’(x)$，那么有 $f(x)=g(x)+C$ ( $C$ 为常数)</li>
+</ul>
+<p>二阶导数在区间内始终为正，则函数在该区间内是凹向上的<br>二阶导数在区间内始终为负，则函数在该区间内是凹向下<br>如果 $x=c$ 点是函数 $f$ 的拐点，则有 $f’’(c)=0$<br>如果 $f’’(c)=0$，$c$ 点不一定是函数 $f$ 的拐点，例如 $f(x)=x^4$</p>
+<p>对导数为零点的分类<br>假设有一个函数 $f$ 以及数 $c$ 使得 $f’(c)=0$，即 $x=c$ 处切线为水平的，有三种常见的可能性：$x=c$ 可能为局部最大值；也可能为局部最小值；还可能为水平拐点<br>留白，待补图<br>使用一次导数进行判断</p>
+<ul>
+<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号由正变负，那么 $c$ 点为局部最大值</li>
+<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号由负变正，那么 $c$ 点为局部最小值</li>
+<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号不发生变化，那么 $c$ 点为水平拐点</li>
+</ul>
+]]></content>
+      <categories>
+        <category>知识点</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>数学笔记</tag>
+        <tag>普林斯顿微积分读本</tag>
+        <tag>知识点</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第一章 函数、图像和直线</title>
-    <url>/calculus1/</url>
+    <url>/calculus/calculus1/</url>
     <content><![CDATA[<h1 id="第一章-函数、图像和直线"><a href="#第一章-函数、图像和直线" class="headerlink" title="第一章 函数、图像和直线"></a>第一章 函数、图像和直线</h1><p>定义域，函数输入的取值范围<br>值域，函数输出的可能值组成的集合<br>上域，函数输出的可能值范围，$上域 \supset 值域$<br>垂线检验，判断是否为函数<br>反函数，$f^{-1}$ 和 $f$ 互为反函数<br>水平线检验，判断是否有反函数<br>反函数与原函数以 $y=x$ 为对称轴<br>函数复合，书写为$f(x)=h(g(x)),f=h \circ g$，即 f 是 g 与 h 的<strong>复合</strong><br>偶函数具有镜面对称性，$f(x)=f(-x)$<br>奇函数具有原点对称性，$f(-x)=-f(x)$<br>只有一个函数是既奇又偶的，即$f(x)=0$<br>两个奇函数之积是偶函数<br>两偶函数之积仍为偶函数<br>奇函数和偶函数之积是奇函数<br>形如 $f(x)=mx+b$ 的函数叫做线性函数，其图像为直线，直线斜率是m<br>确定两点即可确定线性函数的图像<br>线性函数 y 轴的截距为 b ，x 轴截距为 $y=0$ 时自变量 x 的值<br>知道斜率和一个点就可以确定一条直线<br>点斜式：$如果已知直线通过点(x_0,y_0),斜率为m,则它的方程为 y-y_0=m(x-x_0)$<br>如果你知道两个确定点，就可以求出斜率，进而得到直线方程<br>$如果一条直线通过点(x_1,y_1)和(x_2,y_2),则它的斜率等于 \frac{y_2-y_1}{x_2-x_1}$<br>多项式，以 x 的非负次幂为基本项同实数做乘法并将有限个这样的项相加得到<br>每项中所乘实数称作系数，最大的幂指数 n （该项系数不为 0）叫作多项式的次数<br>次数为 n 的多项式的数学通式为<br>$p(x)=a_nx^n+a_{n-1}x^{n-1}+\dots+a_2x^2+a_1x+a_0$<br>其中 $a_n$ 为 $x^n$ 的系数， $a_{n-1}$ 为 $x^{n-1}$ 的系数，以此类推，直到最后一项 $1$ 的系数为 $a_0$<br>多项式图像左右两端的走势是由最高次数的项的系数决定的，该系数叫作<strong>首项系数</strong>，我们只需考虑首项系数正负以及多项式次数的奇偶就能判断图像两端的走势，有四种情况<br>此处留白，图片待补<br>次数为 2 的多项式又叫二次函数<br>一般写作 $p(x)=ax^2+bx+c$<br>我们可以通过判别式的符号确定二次函数有几个实数解，通常我们用希腊字母 $\Delta$ 来表示判别式 $\Delta=b^2-4ac$ ，若 $\Delta ＞ 0$，有两个不同的解，若 $\Delta = 0$，只有一个解， 若$\Delta ＜ 0$，则实数范围内无解，对于前两种情况，有解时，解为$\frac{-b \pm \sqrt{b^2-4ac}}{2a}$<br>二次函数配方<br>举例一枚：考虑二次函数 $2x^2-3x+10$</p>
 <ul>
 <li>第一步，把二项式系数提出，多项式变为 $2(x^2-\frac{3}{2}x+5)$</li>
@@ -24,7 +59,7 @@
   </entry>
   <entry>
     <title>第十章 反函数和反三角函数</title>
-    <url>/calculus10/</url>
+    <url>/calculus/calculus10/</url>
     <content><![CDATA[<h1 id="第十章-反函数和反三角函数"><a href="#第十章-反函数和反三角函数" class="headerlink" title="第十章 反函数和反三角函数"></a>第十章 反函数和反三角函数</h1><p>使用导数证明反函数存在，满足水平线检验的图像必定是具有严格单调性的，故如果 $f$ 在其定义域 $(a,b)$ 上可导且满足以下条件中的任意一条，则 $f$ 有反函数</p>
 <ul>
 <li>对于所有的在 $(a,b)$ 中的 $x$，$f’(x) &gt;0$</li>
@@ -64,7 +99,7 @@
   </entry>
   <entry>
     <title>第12章 绘制函数图像</title>
-    <url>/calculus12/</url>
+    <url>/calculus/calculus12/</url>
     <content><![CDATA[<h1 id="第12章-绘制函数图像"><a href="#第12章-绘制函数图像" class="headerlink" title="第12章 绘制函数图像"></a>第12章 绘制函数图像</h1>]]></content>
       <categories>
         <category>知识点</category>
@@ -78,43 +113,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第11章 导数和图像</title>
-    <url>/calculus11/</url>
-    <content><![CDATA[<h1 id="第11章-导数和图像"><a href="#第11章-导数和图像" class="headerlink" title="第11章 导数和图像"></a>第11章 导数和图像</h1><p>全局最大(小)值 或 绝对最大(小)值<br>局部最大(小)值 或 相对最大(小)值<br><strong>最大值与最小值定理</strong>：如果 $f$ 在 $[a,b]$ 上连续，那么 $f$ 在 $[a,b]$ 上至少有一个最大值和一个最小值<br><strong>极值定理</strong>：假设函数 $f$ 定义在开区间 $(a,b)$ 内，并且点 $c$ 在 $(a,b)$ 区间内，如果点 $c$ 为函数的局部最大值或最小值，那么点 $c$ 一定为该函数的临界点，也就是说，$f’(c)=0$ 或 $f’(c)$ 不存在，此定理适用于开区间<br>在一个开区间内的局部最大值和最小值只有可能出现在临界点，但临界点未必一定是局部最大值或局部最小值，例如 $f(x)=x^3$<br><strong>罗尔定理</strong>：假设函数 $f$ 在闭区间 $[a,b]$ 内连续，在开区间 $(a,b)$ 内可导，如果 $f(a)=f(b)$，那么在开区间 $(a,b)$ 内至少存在一点 $c$，使得 $f’(c)=0$<br>罗尔定理应用的例子：假设有一个函数 $f$ 满足 $f’(x)&gt;0$，则该函数一定满足水平线检验</p>
-<ul>
-<li>证明：首先假设 $f$ 不满足水平线检验，那么一定有一条水平线 $y=L$，它与图像相交两次或者更多，假设这些交点中的两点横坐标为 $a$ 和 $b$，则有 $f(a)=f(b)=L$，由于 $f(a)=f(b)$，所以可以使用罗尔定理，由定理可得在 $a$ 和 $b$ 之间一定存在一点 $c$ 使得 $f’(c)=0$，这与条件相悖，故证明该函数满足水平线检验</li>
-</ul>
-<p><strong>中值定理</strong>：假设函数 $f$ 在闭区间 $[a,b]$ 内连续，在开区间 $(a,b)$ 内可导，那么在开区间 $(a,b)$ 内至少有一点 $c$ 使得 $f’(c)=\frac{f(b)-f(a)}{b-a}$<br>中值定理应用的例子：假设有一个函数，对于所有的实数 $x$ 处处可导并且 $f’(x)&gt;4$，证明这个函数 $y=f(x)$ 的图像与线性函数 $y=3x-2$ 最多只有一个交点</p>
-<ul>
-<li>证明：如果点 $(x,y)$ 是同时满足函数 $y=f(x)$ 和线性函数 $y=3x-2$ 的点，一定会有 $f(x)=3x-2$，运用反证法，假设交点不止一个，任选其中两个，并分配记号 $a$ 和 $b$，使得 $a&lt;b$，由于他们是交点，有 $f(a)=3a-2$ 和 $f(b)=3b-2$，又由于该函数对于所有实数都处处可导且连续，根据中值定理，在开区间 $(a,b)$ 内一定有一点 $c$ 使得 $f’(c)=\frac{f(b)-f(a)}{b-a}$ 代入 $f(a)=3a-2$ 和 $f(b)=3b-2$，可得 $f’(c)=\frac{f(3b-2)-f(3a-2)}{b-a}=\frac{3(b-a)}{b-a}=3$ 与条件中 对于所有 $x$，$f’(x)&gt;4$ 相悖，因此最多只能有一个交点</li>
-</ul>
-<p>中值定理的推论</p>
-<ul>
-<li>如果对于在定义域 $(a,b)$ 内的所有 $x$，都有 $f’(x)=0$，那么函数 $f$ 在开区间 $(a,b)$ 内为常数函数</li>
-<li>如果对于任意实数 $x$ 都有 $f’(x)=g’(x)$，那么有 $f(x)=g(x)+C$ ( $C$ 为常数)</li>
-</ul>
-<p>二阶导数在区间内始终为正，则函数在该区间内是凹向上的<br>二阶导数在区间内始终为负，则函数在该区间内是凹向下<br>如果 $x=c$ 点是函数 $f$ 的拐点，则有 $f’’(c)=0$<br>如果 $f’’(c)=0$，$c$ 点不一定是函数 $f$ 的拐点，例如 $f(x)=x^4$</p>
-<p>对导数为零点的分类<br>假设有一个函数 $f$ 以及数 $c$ 使得 $f’(c)=0$，即 $x=c$ 处切线为水平的，有三种常见的可能性：$x=c$ 可能为局部最大值；也可能为局部最小值；还可能为水平拐点<br>留白，待补图<br>使用一次导数进行判断</p>
-<ul>
-<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号由正变负，那么 $c$ 点为局部最大值</li>
-<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号由负变正，那么 $c$ 点为局部最小值</li>
-<li>如果从左往右通过 $c$ 点，$f’(x)$ 的符号不发生变化，那么 $c$ 点为水平拐点</li>
-</ul>
-]]></content>
-      <categories>
-        <category>知识点</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>数学笔记</tag>
-        <tag>普林斯顿微积分读本</tag>
-        <tag>知识点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第13章 最优化和线性化</title>
-    <url>/calculus13/</url>
+    <url>/calculus/calculus13/</url>
     <content><![CDATA[<h1 id="第13章-最优化和线性化"><a href="#第13章-最优化和线性化" class="headerlink" title="第13章 最优化和线性化"></a>第13章 最优化和线性化</h1><p><strong>最优化</strong>，往往是指对于某个我们关心的特定变量，使其在区间内最大化或最小化<br>解决最优化问题的一般方法：</p>
 <ul>
 <li>识别出所有你可能用到的变量，并确定你试图最大化或最小化的目标变量</li>
@@ -156,7 +156,7 @@
   </entry>
   <entry>
     <title>第14章 洛必达法则</title>
-    <url>/calculus14/</url>
+    <url>/calculus/calculus14/</url>
     <content><![CDATA[<h1 id="第14章-洛必达法则"><a href="#第14章-洛必达法则" class="headerlink" title="第14章 洛必达法则"></a>第14章 洛必达法则</h1><h2 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h2><p><strong>洛必达法则</strong>，如果 $f(a)=g(a)=0$，那么 $\lim\limits_{x \rightarrow a}\frac{f(x)}{g(x)}=\lim\limits_{x \rightarrow a}\frac{f’(x)}{g’(x)}$，假设等式右端的极限存在，且当 $x$ 趋于但不等于 $a$ 时，$g’(x)$ 不为 $0$</p>
 <h3 id="类型-A-：-frac-0-0-或-frac-pm-infty-pm-infty"><a href="#类型-A-：-frac-0-0-或-frac-pm-infty-pm-infty" class="headerlink" title="类型 $A$：$\frac{0}{0}$ 或 $\frac{\pm\infty}{\pm\infty}$"></a>类型 $A$：$\frac{0}{0}$ 或 $\frac{\pm\infty}{\pm\infty}$</h3><p>例子一枚：$\lim\limits_{x \rightarrow 0}\frac{x-sin(x)}{x^3} \ (\frac{0}{0})$</p>
 <ul>
@@ -217,7 +217,7 @@
   </entry>
   <entry>
     <title>第15章 积分</title>
-    <url>/calculus15/</url>
+    <url>/calculus/calculus15/</url>
     <content><![CDATA[<h1 id="第15章-积分"><a href="#第15章-积分" class="headerlink" title="第15章 积分"></a>第15章 积分</h1><p>$\sum$ 求和符号<br>过渡章</p>
 ]]></content>
       <categories>
@@ -233,7 +233,7 @@
   </entry>
   <entry>
     <title>第16章 定积分</title>
-    <url>/calculus16/</url>
+    <url>/calculus/calculus16/</url>
     <content><![CDATA[<h1 id="第16章-定积分"><a href="#第16章-定积分" class="headerlink" title="第16章 定积分"></a>第16章 定积分</h1><p>留白，待补图积分简例</p>
 <p><strong>定积分</strong>，$\displaystyle\int^b_af(x)dx$，读作“函数 $f(x)$ 对于 $x$ 从 $a$ 到 $b$ 的积分”，表达式 $f(x)$ 叫作<strong>被积函数</strong>，$a$ 和 $b$ 说明两条垂线在哪，也叫 <strong>积分极限</strong> 或者 <strong>积分端点</strong>，$dx$ 说明 $x$ 是水平轴的变量，$x$ 是虚拟变量.</p>
 <p>如果函数 $f$ 为有界函数并在区间 $[a,b]$ 上有有限个不连续点，那么函数 $f$ 是可积的.</p>
@@ -263,7 +263,7 @@
   </entry>
   <entry>
     <title>第17章 微积分基本定理</title>
-    <url>/calculus17/</url>
+    <url>/calculus/calculus17/</url>
     <content><![CDATA[<h1 id="第17章-微积分基本定理"><a href="#第17章-微积分基本定理" class="headerlink" title="第17章 微积分基本定理"></a>第17章 微积分基本定理</h1><h2 id="微积分基本定理"><a href="#微积分基本定理" class="headerlink" title="微积分基本定理"></a>微积分基本定理</h2><p><strong>微积分的第一基本定理</strong>：如果函数 $f$ 在闭区间 $[a,b]$ 上是连续的，定义 $F$ 为 $F(x)=\displaystyle\int_a^xf(t)dt,x \in [a,b]$ 则 $F$ 在开区间 $(a,b)$ 内是可导函数，而且 $F’(x)=f(x)$<br>简而言之，可以总结为 $\frac{d}{dx}\int_a^xf(t)dt=f(x)$<br><strong>微积分的第二基本定理</strong>：如果函数 $f$ 在闭区间 $[a,b]$ 上是连续的，$F$ 是 $f$ 的任意一个反导数(关于 $x$)，那么有 $\displaystyle\int_a^bf(x)dx=F(b)-F(a)$<br>在实践中，通常写成 $F(x)\big|_a^b=F(b)-F(a)$</p>
 <p>例子：$\displaystyle\int_{\frac{\pi}{6}}^{\frac{\pi}{2}}cos(x)dx=sin(x)\big|_{\frac{\pi}{6}}^{\frac{\pi}{2}}=sin(\frac{\pi}{2})-sin(\frac{\pi}{6})=1-\frac{1}{2}=\frac{1}{2}$</p>
 <p>$\displaystyle\int f(x)dx$，表示函数 $f$ 的反导数的集合</p>
@@ -298,7 +298,7 @@
   </entry>
   <entry>
     <title>第18章 积分的方法 I</title>
-    <url>/calculus18/</url>
+    <url>/calculus/calculus18/</url>
     <content><![CDATA[<h1 id="第18章-积分的方法-I"><a href="#第18章-积分的方法-I" class="headerlink" title="第18章 积分的方法 I"></a>第18章 积分的方法 I</h1><h2 id="换元法"><a href="#换元法" class="headerlink" title="换元法"></a>换元法</h2><p>例子一枚：$\displaystyle\int x^2cos(x^3)dx$</p>
 <ul>
 <li>设 $t=x^3$，考虑用 $t$ 替代表达式中的每一个 $x$</li>
@@ -369,7 +369,7 @@
   </entry>
   <entry>
     <title>第二章 三角学回顾</title>
-    <url>/calculus2/</url>
+    <url>/calculus/calculus2/</url>
     <content><![CDATA[<h1 id="第二章-三角学回顾"><a href="#第二章-三角学回顾" class="headerlink" title="第二章 三角学回顾"></a>第二章 三角学回顾</h1><ul>
 <li>$正弦函数sin(\theta)$</li>
 <li>$余弦函数cos(\theta)$</li>
@@ -402,8 +402,24 @@
       </tags>
   </entry>
   <entry>
+    <title>第三章 极限导论</title>
+    <url>/calculus/calculus3/</url>
+    <content><![CDATA[<h1 id="第三章-极限导论"><a href="#第三章-极限导论" class="headerlink" title="第三章 极限导论"></a>第三章 极限导论</h1><p>极限，$\lim\limits_{x \rightarrow 0}$<br>通常双侧极限在 $x=a$ 处存在，仅当左极限和右极限在 $x=a$ 处都存在且相等。用数学语言描述为：$\lim\limits_{x \rightarrow a^-}f(x)=L$ 且 $\lim\limits_{x \rightarrow a^+}f(x)=L$ 等价于 $\lim\limits_{x \rightarrow a}f(x)=L$<br>若左极限和右极限不相等，那么双侧极限不存在，缩写“DNE”不存在<br>关于“垂直渐近线”的正式定义<br>“$f$ 在 $x=a$ 处有一条垂直渐近线”说的是，$\lim\limits_{x \rightarrow a^+}f(x)$ 和 $\lim\limits_{x \rightarrow a^-}f(x)$，其中至少有一个极限是 $\infty$ 或 $-\infty$<br>关于“水平渐进线”的定义<br>“$f$ 在 $y=L$ 处有一条右侧水平渐近线”意味着 $\lim\limits_{x \rightarrow \infty}f(x)=L$<br>“$f$ 在 $y=M$ 处有一条左侧水平渐近线”意味着 $\lim\limits_{x \rightarrow -\infty}f(x)=M$<br>水平渐近线的可能数为0、1、2<br>垂直渐近线可以有很多条<br>一个函数可能与水平渐近线相交，例如 $y=\frac{sin(x)}{x},x＞3$<br>三明治定理（夹逼定理）<br>如果对于所有在 a 附近的 x 都有 $g(x) \leqslant f(x) \leqslant h(x)$，且 $\lim\limits_{x \rightarrow a}g(x)=\lim\limits_{x \rightarrow a}h(x)=L$，则 $\lim\limits_{x \rightarrow a}f(x)=L$</p>
+]]></content>
+      <categories>
+        <category>知识点</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>数学笔记</tag>
+        <tag>普林斯顿微积分读本</tag>
+        <tag>知识点</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第四章 求解多项式的极限问题</title>
-    <url>/calculus4/</url>
+    <url>/calculus/calculus4/</url>
     <content><![CDATA[<h1 id="第四章-求解多项式的极限问题"><a href="#第四章-求解多项式的极限问题" class="headerlink" title="第四章 求解多项式的极限问题"></a>第四章 求解多项式的极限问题</h1><h2 id="求解-x-rightarrow-a-时的有理函数的极限"><a href="#求解-x-rightarrow-a-时的有理函数的极限" class="headerlink" title="求解 $x \rightarrow a$ 时的有理函数的极限"></a>求解 $x \rightarrow a$ 时的有理函数的极限</h2><ul>
 <li>将 $x=a$ 代入表达式</li>
 <li>如果能得到合理值，则此值为所求极限行，否则进行下一步</li>
@@ -459,24 +475,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第三章 极限导论</title>
-    <url>/calculus3/</url>
-    <content><![CDATA[<h1 id="第三章-极限导论"><a href="#第三章-极限导论" class="headerlink" title="第三章 极限导论"></a>第三章 极限导论</h1><p>极限，$\lim\limits_{x \rightarrow 0}$<br>通常双侧极限在 $x=a$ 处存在，仅当左极限和右极限在 $x=a$ 处都存在且相等。用数学语言描述为：$\lim\limits_{x \rightarrow a^-}f(x)=L$ 且 $\lim\limits_{x \rightarrow a^+}f(x)=L$ 等价于 $\lim\limits_{x \rightarrow a}f(x)=L$<br>若左极限和右极限不相等，那么双侧极限不存在，缩写“DNE”不存在<br>关于“垂直渐近线”的正式定义<br>“$f$ 在 $x=a$ 处有一条垂直渐近线”说的是，$\lim\limits_{x \rightarrow a^+}f(x)$ 和 $\lim\limits_{x \rightarrow a^-}f(x)$，其中至少有一个极限是 $\infty$ 或 $-\infty$<br>关于“水平渐进线”的定义<br>“$f$ 在 $y=L$ 处有一条右侧水平渐近线”意味着 $\lim\limits_{x \rightarrow \infty}f(x)=L$<br>“$f$ 在 $y=M$ 处有一条左侧水平渐近线”意味着 $\lim\limits_{x \rightarrow -\infty}f(x)=M$<br>水平渐近线的可能数为0、1、2<br>垂直渐近线可以有很多条<br>一个函数可能与水平渐近线相交，例如 $y=\frac{sin(x)}{x},x＞3$<br>三明治定理（夹逼定理）<br>如果对于所有在 a 附近的 x 都有 $g(x) \leqslant f(x) \leqslant h(x)$，且 $\lim\limits_{x \rightarrow a}g(x)=\lim\limits_{x \rightarrow a}h(x)=L$，则 $\lim\limits_{x \rightarrow a}f(x)=L$</p>
-]]></content>
-      <categories>
-        <category>知识点</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>数学笔记</tag>
-        <tag>普林斯顿微积分读本</tag>
-        <tag>知识点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第五章 连续性和可导性</title>
-    <url>/calculus5/</url>
+    <url>/calculus/calculus5/</url>
     <content><![CDATA[<h1 id="第五章-连续性和可导性"><a href="#第五章-连续性和可导性" class="headerlink" title="第五章 连续性和可导性"></a>第五章 连续性和可导性</h1><p>关于在一点处连续：如果 $\lim\limits_{x \rightarrow a}f(x)=f(a)$，函数 f 在点 $x=a$ 处连续，若函数在某点连续，须明确以下三条成立</p>
 <ul>
 <li>双侧极限 $\lim\limits_{x \rightarrow a}f(x)$ 存在，且是有限的</li>
@@ -505,7 +505,7 @@
   </entry>
   <entry>
     <title>第六章 求解微分问题</title>
-    <url>/calculus6/</url>
+    <url>/calculus/calculus6/</url>
     <content><![CDATA[<h1 id="第六章-求解微分问题"><a href="#第六章-求解微分问题" class="headerlink" title="第六章 求解微分问题"></a>第六章 求解微分问题</h1><p>使用导数的定义求导，即 $f’(x)=\lim\limits_{h \rightarrow 0}\frac{f(x+h)-f(x)}{h}$<br>留白，待补微分求导图<br>乘积法则版本1：如果 $h(x)=f(x)g(x)$，那么 $h’(x)=f’(x)g(x)+f(x)g’(x)$<br>乘积法则版本2：如果 $y=uv$，则 $\frac{dy}{dx}=v\frac{du}{dx}+u\frac{dv}{dx}$<br>乘积法则(三个变量)：如果 $y=uvw$，那么 $\frac{dy}{dx}=\frac{du}{dx}vw+u\frac{dv}{dx}w+uv\frac{dw}{dx}$<br>商法则(版本1)：如果 $h(x)=\frac{f(x)}{g(x)}$，那么 $h’(x)=\frac{f’(x)g(x)-f(x)g’(x)}{(g(x))^2}$<br>商法则(版本2)：如果 $y=\frac{u}{v}$，那么 $\frac{dy}{dx}=\frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}$<br>链式求导法则求复合函数的导数<br>链式求导法则(版本1)：如果 $h(x)=f(g(x))$，那么 $h’(x)=f’(g(x))g’(x)$<br>链式求导法则(版本2)：如果 $y$ 是 $u$ 的函数，并且 $u$ 是 $x$ 的函数，那么 $\frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}$<br>极限可能是伪装的导数</p>
 ]]></content>
       <categories>
@@ -520,38 +520,8 @@
       </tags>
   </entry>
   <entry>
-    <title>第八章 隐函数求导和相关变化率</title>
-    <url>/calculus8/</url>
-    <content><![CDATA[<h1 id="第八章-隐函数求导和相关变化率"><a href="#第八章-隐函数求导和相关变化率" class="headerlink" title="第八章 隐函数求导和相关变化率"></a>第八章 隐函数求导和相关变化率</h1><p><strong>隐函数的求导</strong></p>
-<ul>
-<li>在原始方程中，对一切求导并使用链式求导法则、乘积法则、以及商法则进行化简</li>
-<li>如果求的是特定值的斜率，则么先代入 x 和 y 的已知值，整理求出 $\frac{dy}{dx}$</li>
-</ul>
-<p><strong>隐函数求二次导</strong>，是在一次导的情况下再对每一项做一次求导运算，得到结果中可能有一阶导数，记得代入计算即可</p>
-<p><strong>相关变化率</strong>，量 $Q$ 的变化率是 $Q$ 关于时间的导数，也就是说，如果 $Q$ 是某个量，那么 $Q$ 的变化率是 $\frac{dQ}{dt}$</p>
-<p>求解相关变化率问题的一般方法</p>
-<ul>
-<li>读题，识别出所有的量并注意到哪一个量是你需要对其求相关变化率的</li>
-<li>写出一个关联所有量的方程(有时可能不止一个方程)</li>
-<li>对剩余的方程关于时间 t 做隐函数求导，对每一个方程两边添加一个 $\frac{d}{dt}$，得到一个或多个关联起各个变化率的方程</li>
-<li>最后将所有已知值代入所有方程中做替换，联立求解方程得到所求解的变化率</li>
-</ul>
-<p>留白，待补例题 n 个</p>
-]]></content>
-      <categories>
-        <category>知识点</category>
-        <category>数学</category>
-        <category>微积分</category>
-      </categories>
-      <tags>
-        <tag>数学笔记</tag>
-        <tag>普林斯顿微积分读本</tag>
-        <tag>知识点</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>第七章 三角函数的极限和导数</title>
-    <url>/calculus7/</url>
+    <url>/calculus/calculus7/</url>
     <content><![CDATA[<h1 id="第七章-三角函数的极限和导数"><a href="#第七章-三角函数的极限和导数" class="headerlink" title="第七章 三角函数的极限和导数"></a>第七章 三角函数的极限和导数</h1><p>学会判断极限中实际上是大数还是小数<br>重要的公式</p>
 <ul>
 <li>$\lim\limits_{x \rightarrow 0}\frac{sin(x)}{x}=1$</li>
@@ -594,8 +564,38 @@
       </tags>
   </entry>
   <entry>
+    <title>第八章 隐函数求导和相关变化率</title>
+    <url>/calculus/calculus8/</url>
+    <content><![CDATA[<h1 id="第八章-隐函数求导和相关变化率"><a href="#第八章-隐函数求导和相关变化率" class="headerlink" title="第八章 隐函数求导和相关变化率"></a>第八章 隐函数求导和相关变化率</h1><p><strong>隐函数的求导</strong></p>
+<ul>
+<li>在原始方程中，对一切求导并使用链式求导法则、乘积法则、以及商法则进行化简</li>
+<li>如果求的是特定值的斜率，则么先代入 x 和 y 的已知值，整理求出 $\frac{dy}{dx}$</li>
+</ul>
+<p><strong>隐函数求二次导</strong>，是在一次导的情况下再对每一项做一次求导运算，得到结果中可能有一阶导数，记得代入计算即可</p>
+<p><strong>相关变化率</strong>，量 $Q$ 的变化率是 $Q$ 关于时间的导数，也就是说，如果 $Q$ 是某个量，那么 $Q$ 的变化率是 $\frac{dQ}{dt}$</p>
+<p>求解相关变化率问题的一般方法</p>
+<ul>
+<li>读题，识别出所有的量并注意到哪一个量是你需要对其求相关变化率的</li>
+<li>写出一个关联所有量的方程(有时可能不止一个方程)</li>
+<li>对剩余的方程关于时间 t 做隐函数求导，对每一个方程两边添加一个 $\frac{d}{dt}$，得到一个或多个关联起各个变化率的方程</li>
+<li>最后将所有已知值代入所有方程中做替换，联立求解方程得到所求解的变化率</li>
+</ul>
+<p>留白，待补例题 n 个</p>
+]]></content>
+      <categories>
+        <category>知识点</category>
+        <category>数学</category>
+        <category>微积分</category>
+      </categories>
+      <tags>
+        <tag>数学笔记</tag>
+        <tag>普林斯顿微积分读本</tag>
+        <tag>知识点</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第九章 指数函数和对数函数</title>
-    <url>/calculus9/</url>
+    <url>/calculus/calculus9/</url>
     <content><![CDATA[<h1 id="第九章-指数函数和对数函数"><a href="#第九章-指数函数和对数函数" class="headerlink" title="第九章 指数函数和对数函数"></a>第九章 指数函数和对数函数</h1><h2 id="指数法则"><a href="#指数法则" class="headerlink" title="指数法则"></a>指数法则</h2><ul>
 <li>$b^0=1$ 任意非零数的零次幂是 $1$</li>
 <li>$b^1=b$ 一个数的一次幂正好是该数本身</li>
